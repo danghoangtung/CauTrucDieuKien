@@ -1,0 +1,32 @@
+<html>
+
+<head></head>
+
+<body>
+    <input type="text" id="ip">
+    <button onclick="xuly()">xuly</button>
+    <fieldset style="font-size: 50px;color: rgb(0, 0, 255);">
+        <legend>ngôn ngữ</legend>
+        ngôn ngữ : <p id="d"></p><br>
+        quốc gia : <p id="e"></p>
+    </fieldset>
+</body>
+<script>
+    function xuly() {
+        let a = document.getElementById("ip").value;
+        switch (a) {
+            case "hello": document.getElementById("d").innerText = "you are speaking english"; break;
+            case "xinchao": document.getElementById("d").innerText = "bạn có biết tiếng việt nam";
+                document.getElementById("e").innerText = "chào mừng bạn đến với việt nam";
+                break;
+            default:
+                document.getElementById("d").innerText = "where are you from";
+                document.getElementById("e").innerText = "nhập lại lời chào theo quốc gia";
+                break;
+        };
+
+
+    } 
+</script>
+
+</html>
