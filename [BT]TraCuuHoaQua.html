@@ -1,0 +1,42 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+    nhập :
+    <input type="text" id="hoaqua">
+    <button onclick="hiengia()">Xem Giá</button>
+    <script>
+        function hiengia() {
+            let A = document.getElementById("hoaqua").value
+            if (A == "ổi") {
+                alert("giá ổi là : 20.000vnd")
+            } else
+                if (A == "dưa hấu") {
+                    alert("giá dưa hấu là : 20.000vnd")
+                } else
+                    if (A == "táo") {
+                        alert("giá táo là : 30.000VND")
+                    } else
+                        if (A == "xoài") {
+                            alert("giá xoài là : 30.000vnd")
+                        } else
+                            if (A == "cam") {
+                                alert("giá cam là : 40.000vnd")
+                            } else
+                                if (A == "chôm chôm") {
+                                    alert("Giá chôm chôm là : 40.000vnd ")
+                                } else
+                                    if (A == "măng cụt") {
+                                        alert("giá măng cụt là : 50.000vnd")
+                                    }
+                                    else {
+                                        alert("không có loại hoa quả này")
+                                    }
+        }
+    </script>
+</body>
+
+</html>
